@@ -1,0 +1,233 @@
+/*
+--- Content ----
+*/
+
+html{
+    position: relative;
+    min-height: 100%;
+    background: linear-gradient(135deg, #3D3D3D, #ffffff);
+}
+
+body{
+    font-family: 'calibri','sans-serif';
+    font-size: large;
+    background-color: grey;
+}
+
+#content{
+    margin-top: 80px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    #content{
+        margin-left: 10px;
+        margin-top: 60px;
+    }
+}
+
+/*
+--- Finde Me ----
+*/
+
+#map {
+    width: 40vw;
+    height: 40vh;
+    position: relative;
+    right: 10px;
+}
+
+
+/*
+--- About Me ----
+*/
+
+.img {
+    width: 20vw;
+}
+
+
+
+
+/*
+Slideshow
+*/
+
+#slideShowContainer {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.carousel {
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-caption {
+    position: absolute;
+    width: 25%;
+    height: auto;
+    left: 10%;
+    top: 25%;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    background-color: rgba(120, 120, 120, 0.9);
+    overflow: hidden;
+}
+
+.carousel-caption img {
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+    height: 70vh;
+}
+
+
+
+/* --- Navbar ---- */
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: #3D3D3D;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+nav a{
+    color: #fff;
+    padding: 5px;
+    position: relative;
+    top: 10%;
+    font-size: 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#logo {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 70px;
+    width: auto;
+}
+
+a:hover{
+    color: rgb(150,150,150)
+}
+
+.brand{
+    font-size: 50px;
+}
+
+.brand:hover{
+    color: #ffffff;
+}
+
+#navicon{
+    display: none;
+}
+
+@media only screen and (max-width: 768px){
+    nav{
+        width: 0vw;
+        height: 100vh;
+        background-color: rgba(183,183,183,0.7);
+        transition: width 1s;
+        padding-top: 60px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+        overflow: hidden;
+    }
+
+    #navbar_wrapper{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #3D3D3D;
+        width: 100vw;
+        height: 50px;
+    }
+
+    #logo{
+        height: 40px;
+    }
+
+    nav a{
+        color: #000;
+        margin-bottom: 5px;
+        top: 0;
+        width: 50vw;
+        background-color: #fff;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .brand{
+        display: none;
+    }
+
+    #navicon{
+        position: absolute;
+        top: -20px;
+        left: 15px;
+        display: block;
+        width: 150px;
+        font-size: 25px;
+    }
+
+    #navbar{
+        width: 35px;
+        height: 35px;
+    }
+
+    #navbar:hover nav{
+        width: 70vw;
+    }
+}
+
+
+/*
+--- Footer ---
+*/
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #3D3D3D;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+footer div{
+    color: #FFF
+}
+
+footer a{
+    color: #fff
+}
+
+@media only screen and (max-width: 768px){
+    footer div{
+        font-size: 14px;
+    }
+
+    footer #openHours{
+        display: none;
+    }
+}
